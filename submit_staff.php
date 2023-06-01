@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
   // Get the form fields
   $name = $_POST['name'];
   $email = $_POST['email'];
@@ -9,6 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $why_apply = $_POST['why_apply'];
   $blacklist = $_POST['blacklist-yes'];
 
+  
   // Prepare the message payload as an embed
   $payload = [
     'embeds' => [
@@ -49,10 +50,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   ];
 
   // Send the message to Discord using a webhook
-  $webhookUrl = 'https://discord.com/api/webhooks/1113089573354999869/X2ZkhLAvsaIqHYuRtzXtMpKxrrJHp3xn6br-yKfjkEa1fqI5l_85TknsdtUdIZ3aut83';
+  
   $data = json_encode($payload);
-
-  $ch = curl_init($webhookUrl);
+  $discordWebhookURL = getenv('DISCORD_WEBHOOK_URL');
+  
+  $ch = curl_init($discordWebhookURL);
   curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
   curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
