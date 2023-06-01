@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   ];
 
   // Send the message to Discord using a webhook
-  $webhookUrl = 'YOUR_DISCORD_WEBHOOK_URL';
+  $webhookUrl = 'https://discord.com/api/webhooks/1113089573354999869/X2ZkhLAvsaIqHYuRtzXtMpKxrrJHp3xn6br-yKfjkEa1fqI5l_85TknsdtUdIZ3aut83';
   $data = json_encode($payload);
 
   $ch = curl_init($webhookUrl);

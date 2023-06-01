@@ -24,27 +24,6 @@
         <label for="discord" class="form-label">Discord Username &amp; Tagline:</label>
         <input type="text" class="form-control" id="discord" name="discord" required>
       </div>
-      <div class="mb-3">
-        <label class="form-label">Role you are applying for:</label>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="role" id="role-development" value="Development" required>
-          <label class="form-check-label" for="role-development">
-            Development
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="role" id="role-staff" value="Staff" required>
-          <label class="form-check-label" for="role-staff">
-            Staff
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="role" id="role-management" value="Management" required>
-          <label class="form-check-label" for="role-management">
-            Management
-          </label>
-        </div>
-      </div>
       <!-- Role selection -->
       <div class="mb-3">
         <label class="form-label">Role you are applying for:</label>
@@ -169,7 +148,25 @@
         `;
         document.getElementById('application-form').action = 'submit_management.php';
       } else {
-        // No additional fields for Staff role
+        additionalFields.innerHTML = `
+          <div class="mb-3">
+            <label for="previous-exp" class="form-label">Previous experience in Staff:</label>
+            <textarea class="form-control" id="previous-exp" name="previous_exp"></textarea>
+          </div>
+          <div class="mb-3">
+        <label for="why-apply" class="form-label">Why are you applying for a Staff Position:</label>
+        <textarea class="form-control" id="why-apply" name="why_apply" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Are you aware that any forms of abuse will result in permanant blacklisting?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="blacklist-yes" id="blacklist-accept" value="Yes" required>
+          <label class="form-check-label" for="blacklist-accept">
+            Yes
+          </label>
+        </div>
+      </div>
+        `;
         document.getElementById('application-form').action = 'submit_staff.php';
       }
     }

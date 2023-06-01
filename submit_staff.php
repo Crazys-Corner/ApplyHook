@@ -5,6 +5,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $email = $_POST['email'];
   $discord = $_POST['discord'];
   $role = $_POST['role'];
+  $previous = $_POST['previous_exp'];
+  $why_apply = $_POST['why_apply'];
+  $blacklist = $_POST['blacklist-yes'];
 
   // Prepare the message payload as an embed
   $payload = [
@@ -27,6 +30,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           [
             'name' => 'Role',
             'value' => $role
+          ],
+          [
+            'name' => 'Previous Experience',
+            'value' => $previous 
+          ],
+          [
+            'name' => 'Why they applied',
+            'value' => $why_apply
+          ],
+          [
+            'name' => 'Agreed to No Abuse',
+            'value' => $blacklist
           ]
         ]
       ]
@@ -34,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   ];
 
   // Send the message to Discord using a webhook
-  $webhookUrl = 'YOUR_DISCORD_WEBHOOK_URL';
+  $webhookUrl = 'https://discord.com/api/webhooks/1113089573354999869/X2ZkhLAvsaIqHYuRtzXtMpKxrrJHp3xn6br-yKfjkEa1fqI5l_85TknsdtUdIZ3aut83';
   $data = json_encode($payload);
 
   $ch = curl_init($webhookUrl);
