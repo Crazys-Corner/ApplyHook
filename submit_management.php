@@ -7,6 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $role = $_POST['role'];
   $previousExp = isset($_POST['previous_exp']) ? $_POST['previous_exp'] : '';
   $whyApply = $_POST['why_apply'];
+  $isStaff = $_POST['is-staff'];
   $moreWork = isset($_POST['more-work']) ? $_POST['more-work'] : '';
   $blacklistYes = $_POST['blacklist-yes'];
 
@@ -33,15 +34,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             'value' => $role
           ],
           [
-            'name' => 'Previous Experience',
+            'name' => 'Previous Experience in Management',
             'value' => $previousExp
           ],
           [
-            'name' => 'Why are you applying for this position',
+            'name' => 'Why are you applying for a Management Position',
             'value' => $whyApply
           ],
           [
-            'name' => 'Are you aware that you might be asked to do some development work?',
+            'name' => 'Are you currently a staff member?',
+            'value' => $isStaff
+          ],
+          [
+            'name' => 'Are you aware that you might be asked to do some light development work?',
             'value' => $moreWork
           ],
           [
@@ -54,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   ];
 
   // Send the message to Discord using a webhook
-  $webhookUrl = 'https://discord.com/api/webhooks/1113089573354999869/X2ZkhLAvsaIqHYuRtzXtMpKxrrJHp3xn6br-yKfjkEa1fqI5l_85TknsdtUdIZ3aut83';
+  $webhookUrl = 'YOUR_DISCORD_WEBHOOK_URL';
   $data = json_encode($payload);
 
   $ch = curl_init($webhookUrl);
