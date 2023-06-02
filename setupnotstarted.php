@@ -10,32 +10,7 @@
 <body class="bg-dark text-white">
   <nav class="navbar navbar-expand-lg fixed-top navbar-scroll desktop-navigation">
     <div class="container-fluid d-flex justify-content-between">
-
-      <a class="navbar-brand link-light" href="index.html" style="padding: 5px;">AOC RP</a>
-
-    
-        <!-- Left links -->
-        <ul class="navbar-nav">
-         
-        </ul>
-        <!-- Left links -->
-        
-        <!-- Right Links -->
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link link-light" href="#" 
-              >Shop</a>
-          </li>
-        <li class="nav-item">
-            <a class="nav-link link-light" href="#" 
-              >Help</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link-light" href="#" 
-              >Menu</a>
-          </li>
-
-        </ul>
+      <a class="navbar-brand link-light" href="index.html" style="padding: 5px;">Setup Required</a>
     </div>
 
 

@@ -1,3 +1,10 @@
+<?php 
+if (!file_exists('config.php')) {
+  header('location: setupnotstarted.html');
+  exit; // Ensure the script stops execution after the redirect
+}
+require('config.php')
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
