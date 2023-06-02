@@ -16,7 +16,7 @@ EOT;
     putenv("DISCORD_WEBHOOK_URL={$webhook}");
 
     // Delete the setup script
-    unlink(setup.html);
+    unlink('setup.html');
 
     echo "Setup script completed. File created: $filename";
 }
