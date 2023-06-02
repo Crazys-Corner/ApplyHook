@@ -1,16 +1,29 @@
-# Form Webhook Application App
+# ApplyHook
 
-Used to apply for staff, management and development roles on my server, however you can modify the code for whatever reasons you may need. 
+## What is it?
 
-## To use
+ApplyHook is an Open Source application software written in PHP, JS & Bootstrap. It is perfect for game server owners to hire their staff teams, development teams and managers. 
 
-I suggest using Apache and making a .htaccess file. Inside the .htaccess file, do 
+## How do I use it?
 
-``` SetEnv DISCORD_WEBHOOK_URL URL ```
+First, go to 
 
-Or, make an environmental variable with the name of 
+``yourdomain.com/path/to/setup.php``
 
-``` DISCORD_WEBHOOK_URL ``` 
+Fill out the form data by setting up a [Discord Webhook] (https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
 
-with the value equating to the URL of your discord webhook. It will work. 
+Copy the webhook URL, paste it into the Webhook URL Input box. 
 
+Input your server's branding. This shows up at the top left of the page, across all pages. 
+
+You should be good to go now. Publish it to your users, have them fill out forms, and watch them come in via a webhook, straight to you! 
+
+# Final
+
+Please note that even though this is open source, please don't remove the footers at the bottom, I worked relatively hard on this, and would like some recognition, all for zero cost to you. 
+
+Please don't redistribute as a paid software, that's scummy. 
+
+If you would like to see the website's front end example head [here] (https://apply-rp.civilhost.net)
+
+Thanks!
