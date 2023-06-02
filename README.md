@@ -10,7 +10,7 @@ First, go to
 
 ``yourdomain.com/path/to/setup.php``
 
-Fill out the form data by setting up a [Discord Webhook] (https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
+Fill out the form data by setting up a [Discord Webhook](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
 
 Copy the webhook URL, paste it into the Webhook URL Input box. 
 
