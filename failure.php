@@ -55,7 +55,9 @@ require('config.php')
     <h5 class="text-center">Your application has NOT been submitted. Please try again. If issue persists, please contact your website's administrator, or visit the <a href="https://github.com/Crazys-Corner/Discord-Webhook-Forms" target="_blank">Github</a> repository for more.</h5>
     <a href="index.php" class="text-white btn btn-primary" style="margin-top: 10vh;">Click here to go back to the application page.</a>
 </div>
-
+<footer class="text-center" style="margin-top: 25vh; font-size: small;">
+    <span><a href="https://github.com/Crazys-Corner" target="_blank">Written By crazy's_corner#6583</a> <br> <br> This is open source, FREE software, please don't delete this footer & please don't redistribute.</span>
+  </footer>
 
 </body>
 </html>

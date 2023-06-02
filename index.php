@@ -94,7 +94,9 @@ require ('config.php');
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
-
+  <footer class="text-center" style="margin-top: 25vh; font-size: small;">
+    <span><a href="https://github.com/Crazys-Corner" target="_blank">Written By crazy's_corner#6583</a> <br> <br> This is open source, FREE software, please don't delete this footer & please don't redistribute.</span>
+  </footer>
   <script>
     // Function to handle the change event on the role radio buttons
     function handleRoleChange() {

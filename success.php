@@ -56,6 +56,8 @@ require('config.php')
     <a href="index.php" class="text-white btn btn-primary" style="margin-top: 10vh;">Click here to go back to the application page.</a>
 </div>
 
-
+<footer class="text-center" style="margin-top: 25vh; font-size: small;">
+    <span><a href="https://github.com/Crazys-Corner" target="_blank">Written By crazy's_corner#6583</a> <br> <br> This is open source, FREE software, please don't delete this footer & please don't redistribute.</span>
+  </footer>
 </body>
 </html>
