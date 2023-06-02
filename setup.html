@@ -46,9 +46,15 @@
   <h1>Setup Script</h1>
   <form action="webhook.php" method="post">
       <label for="webhook"><h3>Discord Webhook Link:</h3></label>
-      <input type="text" name="webhook" class="form-control" id="webhook" placeholder="https://discord.com/api/webhooks/1234567890/a1b2c3d4e5f6ggjdhskjghslkjdghlksjhgskdjhgksjh_ghsjgdh1231" required>
+      <input type="text" name="webhook" class="form-control" id="webhook" placeholder="EX: https://discord.com/api/webhooks/1234567890/a1b2c3d4e5f6ggjdhskjghslkjdghlksjhgskdjhgksjh_ghsjgdh1231" required>
+      <label for="branding"><h3>Branding Text:</h3></label>
+      <input type="text" name="branding" id="branding" class="form-control" placeholder="Server Name Here" required>
       <input type="submit" value="Create" class="btn btn-danger" style="margin-top: 3vh; size: 5rem;"> <br>
-      <small>Warning, upon clicking create, a file will be generated, and this file will be deleted. In order to change the webhook code, you will need to reupload the setup files, locatable on the <a href="https://github.com/Crazys-Corner/Discord-Webhook-Forms" target="_blank">GitHub</a>, starting setup again, will overwrite the existing Webhook code.  </small>
+      <small>Warning, upon clicking create, a file will be generated, and for security purposes, <span class="text-danger">this file will be deleted.</span> In order to change setup data, you will need to reupload the setup files, locatable on the <a href="https://github.com/Crazys-Corner/Discord-Webhook-Forms" target="_blank">GitHub</a>, starting setup again, will overwrite the existing Webhook code.  </small>
   </div>
+
+  <footer class="text-center" style="margin-top: 25vh; font-size: small;">
+    <span><a href="https://github.com/Crazys-Corner" target="_blank">Written By crazy's_corner#6583</a> <br> <br> This is open source, FREE software, please don't delete this footer & please don't redistribute.</span>
+  </footer>
 </body>
 </html>
