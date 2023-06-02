@@ -1,4 +1,8 @@
 <?php
+if (!file_exists('config.php')) {
+  header('location: setupnotstarted.html');
+  exit; // Ensure the script stops execution after the redirect
+}
 require ('config.php');
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Get the form fields
