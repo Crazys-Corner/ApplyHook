@@ -18,7 +18,7 @@ require('config.php')
   <nav class="navbar navbar-expand-lg fixed-top navbar-scroll desktop-navigation">
     <div class="container-fluid d-flex justify-content-between">
 
-      <a class="navbar-brand link-light" href="index.php" style="padding: 5px;">AOC RP</a>
+      <a class="navbar-brand link-light" href="index.php" style="padding: 5px;"><?php echo getenv('BRANDING_TEXT'); ?></a>
 
     
         <!-- Left links -->
