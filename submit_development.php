@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $payload = [
     'embeds' => [
       [
-        "color" => hexdec( "#03f8fc" ),
+        "color" => hexdec( "#621cc9" ),
         'title' => 'Application Form',
         'fields' => [
           [
