@@ -1,3 +1,10 @@
+<?php 
+if (!file_exists('config.php')) {
+  header('location: setupnotstarted.html');
+  exit; // Ensure the script stops execution after the redirect
+}
+require('config.php')
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +18,7 @@
   <nav class="navbar navbar-expand-lg fixed-top navbar-scroll desktop-navigation">
     <div class="container-fluid d-flex justify-content-between">
 
-      <a class="navbar-brand link-light" href="index.html" style="padding: 5px;">AOC RP</a>
+      <a class="navbar-brand link-light" href="index.html" style="padding: 5px;"><?php echo getenv('BRANDING_TEXT'); ?></a>
 
     
         <!-- Left links -->
