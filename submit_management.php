@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     'embeds' => [
       [
         "color" => hexdec( "#ff005d" ),
-        'title' => 'Application Form',
+        'title' => 'Management Application',
         'fields' => [
           [
             'name' => 'Name',
@@ -78,9 +78,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   // Check if the message was sent successfully
   if ($result === false) {
-    echo "There was an error submitting the form. Please try again.";
+    header('location: failure.html');
   } else {
-    echo "Thank you for your application!";
+    header('location: success.html');
   }
 }
 ?>
