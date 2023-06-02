@@ -18,8 +18,8 @@ EOT;
     putenv("DISCORD_WEBHOOK_URL={$webhook}");
     putenv("BRANDING_TEXT={$branding}");
 
-    // Delete the setup.html file
-    unlink('setup.html');
+    // Delete the setup.php file
+    unlink('setup.php');
 
     echo "Setup script completed. File created: $filename";
 }

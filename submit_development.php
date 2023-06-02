@@ -1,6 +1,6 @@
 <?php
 if (!file_exists('config.php')) {
-  header('location: setupnotstarted.html');
+  header('location: setupnotstarted.php');
   exit; // Ensure the script stops execution after the redirect
 }
 require ('config.php');
@@ -82,9 +82,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   // Check if the message was sent successfully
   if ($result === false) {
-    header('location: failure.html');
+    header('location: failure.php');
   } else {
-    header('location: success.html');
+    header('location: success.php');
   }
 }
 ?>

@@ -12,7 +12,7 @@
   <nav class="navbar navbar-expand-lg fixed-top navbar-scroll desktop-navigation">
     <div class="container-fluid d-flex justify-content-between">
 
-      <a class="navbar-brand link-light" href="index.html" style="padding: 5px;">Setup</a>
+      <a class="navbar-brand link-light" href="index.php" style="padding: 5px;">Setup</a>
   </nav>
   
   </div>

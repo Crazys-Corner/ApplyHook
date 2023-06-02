@@ -1,6 +1,6 @@
 <?php 
 if (!file_exists('config.php')) {
-  header('location: setupnotstarted.html');
+  header('location: setupnotstarted.php');
   exit; // Ensure the script stops execution after the redirect
 }
 require('config.php')
@@ -18,7 +18,7 @@ require('config.php')
   <nav class="navbar navbar-expand-lg fixed-top navbar-scroll desktop-navigation">
     <div class="container-fluid d-flex justify-content-between">
 
-      <a class="navbar-brand link-light" href="index.html" style="padding: 5px;"><?php echo getenv('BRANDING_TEXT'); ?></a>
+      <a class="navbar-brand link-light" href="index.php" style="padding: 5px;"><?php echo getenv('BRANDING_TEXT'); ?></a>
 
     
         <!-- Left links -->
@@ -53,7 +53,7 @@ require('config.php')
 
     <h1 class="text-center" style="margin-top: 25vh;">Success</h1>
     <h5 class="text-center">Your application has successfully been submitted. Please wait atleast 3 days until asking about a response.</h5>
-    <a href="index.html" class="text-white btn btn-primary" style="margin-top: 10vh;">Click here to go back to the application page.</a>
+    <a href="index.php" class="text-white btn btn-primary" style="margin-top: 10vh;">Click here to go back to the application page.</a>
 </div>
 
 

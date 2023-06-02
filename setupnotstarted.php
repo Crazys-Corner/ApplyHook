@@ -10,7 +10,7 @@
 <body class="bg-dark text-white">
   <nav class="navbar navbar-expand-lg fixed-top navbar-scroll desktop-navigation">
     <div class="container-fluid d-flex justify-content-between">
-      <a class="navbar-brand link-light" href="index.html" style="padding: 5px;">Setup Required</a>
+      <a class="navbar-brand link-light" href="index.php" style="padding: 5px;">Setup Required</a>
     </div>
 
 
@@ -21,7 +21,7 @@
 
     <h1 class="text-center text-danger" style="margin-top: 25vh;">Website is NOT setup yet</h1>
     <h5 class="text-center">Due to the website not being properly configured, your application cannot be submitted. Please contact your website's administrator.</h5>
-    <a href="index.html" class="text-white btn btn-primary" style="margin-top: 10vh;">Click here to go back to the application page.</a>
+    <a href="index.php" class="text-white btn btn-primary" style="margin-top: 10vh;">Click here to go back to the application page.</a>
 </div>
 
 

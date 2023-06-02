@@ -1,6 +1,6 @@
 <?php 
 if (!file_exists('config.php')) {
-  header('location: setupnotstarted.html');
+  header('location: setupnotstarted.php');
   exit; // Ensure the script stops execution after the redirect
 }
 require ('config.php');
@@ -19,7 +19,7 @@ require ('config.php');
   <nav class="navbar navbar-expand-lg fixed-top navbar-scroll desktop-navigation">
     <div class="container-fluid d-flex justify-content-between">
 
-      <a class="navbar-brand link-light" href="index.html" style="padding: 5px;">AOC RP</a>
+      <a class="navbar-brand link-light" href="index.php" style="padding: 5px;">AOC RP</a>
 
     
         <!-- Left links -->
