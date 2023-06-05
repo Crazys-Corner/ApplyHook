@@ -86,7 +86,14 @@ require ('config.php');
           </label>
         </div>
       </div>
-
+      <div class="mb-3">
+        <label for="tellus" class="form-label">Tell us about yourself:</label>
+        <input type="text" class="form-control" id="tellus" name="Tell us about yourself">
+      </div>
+      <div class="mb-3">
+        <label for="sw" class="form-label">What are your strengths and weaknesses:</label>
+        <input type="text" class="form-control" id="sw" name="What are your strengths and weaknesses?">
+      </div>
       <!-- Additional fields based on role -->
       <div id="additional-fields"></div>
 
@@ -200,6 +207,15 @@ require ('config.php');
         <textarea class="form-control" id="why-apply" name="why_apply" required></textarea>
       </div>
       <div class="mb-3">
+        <label class="form-label">Do you understand that you will have to complete a staff training?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="stafftrain-yes" id="stafftrain-accept" value="Yes" required>
+          <label class="form-check-label" for="stafftrain-accept">
+            Yes
+          </label>
+        </div>
+      </div>
+      <div class="mb-3">
         <label class="form-label">Are you aware that any forms of abuse will result in permanant blacklisting?</label>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="blacklist-yes" id="blacklist-accept" value="Yes" required>
@@ -208,6 +224,11 @@ require ('config.php');
           </label>
         </div>
       </div>
+      <div class="mb-3">
+            <label for="whyhire" class="form-label">Why should we hire you over another potential staff member?</label>
+            <textarea class="form-control" id="whyhire" name="whyhire"></textarea>
+          </div>
+      
         `;
         document.getElementById('application-form').action = 'submit_staff.php';
       }
