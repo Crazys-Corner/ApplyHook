@@ -29,6 +29,6 @@ Please note that even though this is open source, please don't remove the footer
 
 Please don't redistribute as a paid software, that's scummy. 
 
-If you would like to see the website's front end example head [here] (https://apply-rp.civilhost.net)
+If you would like to see the website's front end example head [here](https://apply-rp.civilhost.net)
 
 Thanks!
