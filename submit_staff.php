@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $previous = $_POST['previous_exp'];
   $why_apply = $_POST['why_apply'];
   $blacklist = $_POST['blacklist-yes'];
-
+  $why_hire = $_POST['whyhire'];
   
   // Prepare the message payload as an embed
   $payload = [
@@ -49,6 +49,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
           [
             'name' => 'Agreed to No Abuse',
             'value' => $blacklist
+          ],
+          [
+            'name' => 'Why we should hire over others',
+            'value' => $why_hire
           ]
         ]
       ]

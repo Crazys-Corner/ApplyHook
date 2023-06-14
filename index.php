@@ -79,12 +79,6 @@ require ('config.php');
             Staff
           </label>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="role" id="role-management" value="Management" required>
-          <label class="form-check-label" for="role-management">
-            Management
-          </label>
-        </div>
       </div>
       <div class="mb-3">
         <label for="tellus" class="form-label">Tell us about yourself:</label>
@@ -144,58 +138,6 @@ require ('config.php');
           </div>
         `;;
         document.getElementById('application-form').action = 'submit_development.php';
-      } else if (selectedRole === 'Management') {
-        additionalFields.innerHTML = `
-        <!-- Additional fields for Management role -->
-          <div class="mb-3">
-            <label for="previous-exp" class="form-label">Previous experience in Management:</label>
-            <textarea class="form-control" id="previous-exp" name="previous_exp"></textarea>
-          </div>
-          <div class="mb-3">
-            <label for="why-apply" class="form-label">Why are you applying for a Management Position:</label>
-            <textarea class="form-control" id="why-apply" name="why_apply" required></textarea>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Are you currently a staff member?:</label>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="is-staff" id="is-staff-yes" value="Yes" required>
-              <label class="form-check-label" for="is-staff-yes">
-                Yes
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="is-staff" id="is-staff-no" value="No" required>
-              <label class="form-check-label" for="is-staff-no">
-                No
-              </label>
-            </div>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Are you aware that you must put in more work as a manager, and might be asked to do some light development work?:</label>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="more-work" id="accept-yes" value="Yes" required>
-              <label class="form-check-label" for="accept-yes">
-                Yes
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="more-work" id="accept-no" value="No" required>
-              <label class="form-check-label" for="accept-no">
-                No
-              </label>
-            </div>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Are you aware that any forms of abuse will result in permanent blacklisting?</label>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="blacklist-yes" id="blacklist-accept" value="Yes" required>
-              <label class="form-check-label" for="blacklist-accept">
-                Yes
-              </label>
-            </div>
-          </div>
-        `;
-        document.getElementById('application-form').action = 'submit_management.php';
       } else {
         additionalFields.innerHTML = `
           <div class="mb-3">
