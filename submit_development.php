@@ -15,6 +15,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $blacklist = $_POST['blacklist-yes'];
   $why_apply = $_POST['why_apply'];
   $previous = $_POST['previous_exp'];
+  $about = $_POST['Tell us about yourself'];
+  $strengths = $_POST['What are your strengths and weaknesses?'];
   // Prepare the message payload as an embed
   $payload = [
     'embeds' => [
@@ -34,6 +36,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             'name' => 'Discord Username & Tagline',
             'value' => $discord
           ],
+          ['name' => 'About them',
+          'value' => $about 
+        ],
+        ['name' => 'Strengths and Weaknesses', 
+          'value' => $strengths
+      ],
           [
             'name' => 'Role',
             'value' => $role

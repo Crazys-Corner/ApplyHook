@@ -23,6 +23,10 @@
       <input type="text" name="webhook" class="form-control" id="webhook" placeholder="EX: https://discord.com/api/webhooks/1234567890/a1b2c3d4e5f6ggjdhskjghslkjdghlksjhgskdjhgksjh_ghsjgdh1231" required>
       <label for="branding"><h3>Branding Text:</h3></label>
       <input type="text" name="branding" id="branding" class="form-control" placeholder="Server Name Here" required>
+      <label for="profile_picture"><h3>Profile Picture URL:</h3></label>
+<input type="text" name="profile_picture" id="profile_picture" class="form-control" placeholder="https://example.com/avatar.png">
+<label for="webhook_name"><h3>Webhook Name:</h3></label>
+<input type="text" name="webhook_name" id="webhook_name" class="form-control" placeholder="My Webhook Name">
       <input type="submit" value="Create" class="btn btn-danger" style="margin-top: 3vh; size: 5rem;"> <br>
       <small>Warning, upon clicking create, a file will be generated, and for security purposes, <span class="text-danger">this file will be deleted.</span> In order to change setup data, you will need to reupload the setup files, locatable on the <a href="https://github.com/Crazys-Corner/Discord-Webhook-Forms" target="_blank">GitHub</a>, starting setup again, will overwrite the existing Webhook code.  </small>
   </div>
