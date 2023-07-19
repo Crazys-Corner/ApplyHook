@@ -115,6 +115,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     echo "cURL error: " . $error;
   } else {
     header('Location: success.php');
+   // ^^ Comment above out for debug if it's not sending to discord ^^
+    echo("success");
+   echo("<br>");
+   echo("Discord Webhook URL: ");
+   echo ('DISCORD_WEBHOOK_URL');
+   echo ("<br>");
+   echo("VAR DUMP FOLLOWING:");
+   echo("<br>");
+   var_dump($_POST); // Display the entire $_POST array for debugging purposes
   }
 } else {
   header('Location: setupnotstarted.php');

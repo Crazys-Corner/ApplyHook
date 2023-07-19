@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     'embeds' => [
       [
         'color' => hexdec("#621cc9"),
-        'title' => 'Webhook Title',
+        'title' => 'Developer Application',
         'avatar_url' => PROFILE_PICTURE_URL,
         'username' => WEBHOOK_NAME,
         'fields' => [
@@ -95,8 +95,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   if ($result === false) {
     header('Location: failure.php');
   } else {
-   // header('Location: success.php');
-   echo("success");
+   
+    header('Location: success.php');
+   // ^^ Comment above out for debug if it's not sending to discord ^^
+    echo("success");
    echo("<br>");
    echo("Discord Webhook URL: ");
    echo ('DISCORD_WEBHOOK_URL');
