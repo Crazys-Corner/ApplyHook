@@ -2,7 +2,7 @@
 
 ## What is it?
 
-ApplyHook is an Open Source application software written in PHP, JS & Bootstrap. It is perfect for game server owners to hire their staff teams, development teams and managers. 
+ApplyHook is a free and Open Source web-app used for Game Server Applications to help server owners with hiring staff teams! It is written in PHP, Vanilla JS, Bootstrap 5 and of course, HTML
 
 ## Features
 
@@ -13,7 +13,7 @@ ApplyHook is an Open Source application software written in PHP, JS & Bootstrap.
 
 First, go to 
 
-``yourdomain.com/path/to/setup.php``
+``yourdomain.com/path/to/setup.php`` (Depends where you upload the files)
 
 Fill out the form data by setting up a [Discord Webhook](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
 
