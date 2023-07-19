@@ -25,8 +25,8 @@ EOT;
     putenv("WEBHOOK_NAME={$webhookName}");
 
     // Delete the setup.php file & setupnotstarted.php file
-    unlink('setup.php');
-    unlink('setupnotstarted.php');
+   unlink('setup.php');
+   unlink('setupnotstarted.php');
 
     echo "Setup script completed. File created: $filename";
 }

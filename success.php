@@ -18,7 +18,7 @@ require('config.php')
   <nav class="navbar navbar-expand-lg fixed-top navbar-scroll desktop-navigation">
     <div class="container-fluid d-flex justify-content-between">
 
-      <a class="navbar-brand link-light" href="index.php" style="padding: 5px;"><?php echo getenv('BRANDING_TEXT'); ?></a>
+      <a class="navbar-brand link-light" href="index.php" style="padding: 5px;"><?php echo ('BRANDING_TEXT'); ?></a>
 
     
         <!-- Left links -->
@@ -57,7 +57,7 @@ require('config.php')
 </div>
 
 <footer class="text-center" style="margin-top: 25vh; font-size: small;">
-    <span><a href="https://github.com/Crazys-Corner" target="_blank">Written By crazy's_corner#6583</a> <br> <br> This is open source, FREE software, please don't delete this footer & please don't redistribute.</span>
+    <span><a href="https://github.com/Crazys-Corner" target="_blank">Written By crazy's_corner</a> <br> <br> This is open source, FREE software, please don't delete this footer & please don't redistribute.</span>
   </footer>
 </body>
 </html>

@@ -19,7 +19,7 @@ require ('config.php');
   <nav class="navbar navbar-expand-lg fixed-top navbar-scroll desktop-navigation">
     <div class="container-fluid d-flex justify-content-between">
 
-      <a class="navbar-brand link-light" href="index.php" style="padding: 5px;"><?php echo getenv('BRANDING_TEXT'); ?></a>
+      <a class="navbar-brand link-light" href="index.php" style="padding: 5px;"><?php echo ('BRANDING_TEXT'); ?></a>
 
     
         <!-- Left links -->
@@ -82,11 +82,11 @@ require ('config.php');
       </div>
       <div class="mb-3">
         <label for="tellus" class="form-label">Tell us about yourself:</label>
-        <input type="text" class="form-control" id="tellus" name="Tell us about yourself">
+        <input type="text" class="form-control" id="tellus" name="about">
       </div>
       <div class="mb-3">
         <label for="sw" class="form-label">What are your strengths and weaknesses:</label>
-        <input type="text" class="form-control" id="sw" name="What are your strengths and weaknesses?">
+        <input type="text" class="form-control" id="sw" name="strengths">
       </div>
       <!-- Additional fields based on role -->
       <div id="additional-fields"></div>
@@ -96,7 +96,7 @@ require ('config.php');
     </form>
   </div>
   <footer class="text-center" style="margin-top: 25vh; font-size: small;">
-    <span><a href="https://github.com/Crazys-Corner" target="_blank">Written By crazy's_corner#6583</a> <br> <br> This is open source, FREE software, please don't delete this footer & please don't redistribute.</span>
+    <span><a href="https://github.com/Crazys-Corner" target="_blank">Written By crazy's_corner</a> <br> <br> This is open source, FREE software, please don't delete this footer & please don't redistribute.</span>
   </footer>
   <script>
     // Function to handle the change event on the role radio buttons
