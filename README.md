@@ -31,4 +31,6 @@ Please don't redistribute as a paid software, that's scummy.
 
 If you would like to see the website's front end example head [here](https://applyhook.civilhost.net)
 
+Note: I don't actively maintain this unless I have a reason to be using it, I am currently working on a close-source (probably) version that's a lot more intuitive for [CivilHost](https://civilhost.net)
+
 Thanks!
