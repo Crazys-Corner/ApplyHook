@@ -19,7 +19,7 @@ require ('config.php');
   <nav class="navbar navbar-expand-lg fixed-top navbar-scroll desktop-navigation">
     <div class="container-fluid d-flex justify-content-between">
 
-      <a class="navbar-brand link-light" href="index.php" style="padding: 5px;"><?php echo ('BRANDING_TEXT'); ?></a>
+      <a class="navbar-brand link-light" href="index.php" style="padding: 5px;"><?php echo (BRANDING_TEXT); ?></a>
 
     
         <!-- Left links -->
@@ -31,11 +31,11 @@ require ('config.php');
         <!-- Right Links -->
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link link-light" href="#" 
+            <a class="nav-link link-light" href="<?php echo (SHOP);?>" 
               >Shop</a>
           </li>
         <li class="nav-item">
-            <a class="nav-link link-light" href="#" 
+            <a class="nav-link link-light" href="<?php echo (HELP);?>" 
               >Help</a>
           </li>
           <li class="nav-item">
